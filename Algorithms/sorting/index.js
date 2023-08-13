@@ -1,5 +1,5 @@
 import { arr } from '../../common/constants.js'
-import { findExtreme, swapElements } from '../../common/index.js'
+import { findExtreme, swapElements } from '../../common/functions.js'
 
 const n = arr.length
 
