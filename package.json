@@ -1,0 +1,12 @@
+{
+  "name": "programming",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A folder to store my programming practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohit",
+  "license": "ISC"
+}
