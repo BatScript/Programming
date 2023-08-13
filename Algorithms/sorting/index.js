@@ -1,7 +1,6 @@
+import { arr } from '../../common/constants.js'
 import { findExtreme, swapElements } from '../../common/index.js'
-// const {findExtreme, swapElements} = require('../common')
 
-const arr = [4, 2, 88, 70, 70, 5, 1]
 const n = arr.length
 
 //* 1. Brute force Approach
