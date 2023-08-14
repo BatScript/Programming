@@ -4,9 +4,9 @@ Hey! Welcome to my repository, I will practice and push all sort of Algorithms a
 
 I plan to solve atleast one problem and learn some stuff everyday. I hope for the best of my consistency.
 
-
 ## Index
 
+```
 > Algorithms
     > Sorting
         1. Basic (More complexcity)
@@ -16,6 +16,7 @@ I plan to solve atleast one problem and learn some stuff everyday. I hope for th
             - Insertion Sort
         2. Advanced (Less Complexcity)
             - Merge Sort
+```
 
 ## Usage
 
