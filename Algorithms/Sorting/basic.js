@@ -1,5 +1,5 @@
-import { arr } from '../../common/constants.js'
-import { findExtreme, swapElements } from '../../common/functions.js'
+import { arr } from '../../Common/constants.js'
+import { findExtreme, swapElements } from '../../Common/functions.js'
 
 const n = arr.length
 
@@ -55,3 +55,23 @@ const n = arr.length
 // }
 
 // bubbleSort(arr, n)
+
+// * 4. Insersion Sort : start from index 0 and keep swapping the right most element until it
+// * reaches its destination
+
+// function insertionSort(arr, n) {
+//   let key
+//   let j
+//   for (let i = 1; i < n; i++) {
+//     key = arr[i]
+//     j = i - 1
+//     while (j >= 0 && key < arr[j]) {
+//       arr[j + 1] = arr[j]
+//       j--
+//     }
+//     arr[j + 1] = key
+//   }
+//   console.log(arr)
+// }
+
+// insertionSort(arr, n)
