@@ -27,3 +27,8 @@
 // Constraints:
 // 1 ≤ N ≤ 500000
 // 0 ≤ arr[i] ≤ 1
+
+function findTransition(arr) {
+  return arr.indexOf(1)
+  // 🐼
+}
