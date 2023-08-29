@@ -8,7 +8,7 @@
 
 **Microtask queue**: callback queue with higher priority. Ex: callbacks returned via promises or fetch.
 
-###How does Browser work behind the scene with javascript?
+### How does Browser work behind the scene with javascript?
 Lets see this with an example : 
 
 ```
