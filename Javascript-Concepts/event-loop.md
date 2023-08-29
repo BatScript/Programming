@@ -1,5 +1,5 @@
-##Event loops and Javascript's mechanism of code execution
-###Fundamentals :
+## Event loops and Javascript's mechanism of code execution
+### Fundamentals :
 **Call stack** : It executes whatever function or statement is inside it (LIFO : Last in first out mechanism)
 
 **Event loop**: Its whole job is to look for the change in callback queue and call stack. It checks if call stack is empty and then moves functions from callback queue or microtask queue to call stack.
