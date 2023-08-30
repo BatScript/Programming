@@ -1,8 +1,9 @@
 # Programming
 
-Hey! Welcome to my repository, I will practice and push all sort of Algorithms and problem solving questions I practice and solve.
+Hey! Welcome to my repository, I will practice and push all sort of Algorithms and problem solving questions I practice and solve. I will also be pushing all the concepts that I learn along the way.
 
-I plan to solve atleast one problem and learn some stuff everyday. I hope for the best of my consistency.
+## Sources
+- Namaste JS by Akshay Saini - Youtube
 
 ## Index
 
@@ -16,6 +17,18 @@ I plan to solve atleast one problem and learn some stuff everyday. I hope for th
             - Insertion Sort
         2. Advanced (Less Complexcity)
             - Merge Sort
+> Javascript-Concepts
+    1. Event Loop
+    2. Higher Order Functions
+    3. Data Types and Variables
+    4. Array Operations
+    5. Miscellaneous
+    6. Types of Function defination
+
+> Problems
+    1. Find Transition Point
+
+> React Concepts
 ```
 
 ## Usage
@@ -24,4 +37,4 @@ Yeah, There isn't any thing to preach here. Its pretty much most basic coding se
 
 Just install a code-runner extension in your vscode (recommended) or just run it via live server on your browser.
 
-Enjoy!
+Clone and Enjoy!
