@@ -37,7 +37,7 @@ const sum = (a, b) => {
 #### functional statement vs functional expressions
 If you know how javascript engine works, you should know that the variables are stored first and then the statements get executed line by line.
 
-So, logically the major difference between function expression and function statement is **Hoisting**
+So, logically the major difference between function expression and function statement is **Hoisting**.
 
 Functional expressions are hoisted while the expressions are not. This happens because expressions have been declared already in phase 1 of JS code execution where Javascript stores the values of variables in the global scope. So while saving other variables, it also saves the function.
 Which explains the example bewlow : 
@@ -91,3 +91,19 @@ But you can't just call them by their names, no, they're not some Harry potter v
  }
 
 ```
+
+### First Class Functions
+
+**Pre Requisite Knowledge :**
+Parameters are local variables inside the function defination and the values that we pass when calling the function, are called arguments.
+```
+function Sum(a, b){ //Parameters
+    return a+b
+}
+
+Sum(2, 4) //Arguments
+
+```
+
+Coming back to the first class functions, If a function has ability to be passed as a variable or inside another function parameter, its called a **first class function**.
+
