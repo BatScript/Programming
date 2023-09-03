@@ -1,6 +1,8 @@
-function isPalindrome(s) {
-    s = s.replaceAll(' ', '').toLowerCase()
-    console.log(s);
+// https://leetcode.com/problems/valid-palindrome/
+
+var isPalindrome = function (s) {
+  s = s.replaceAll(/[^a-z0-9]/gi, '').toLowerCase()
+  console.log(s)
   let mid = Math.round(s.length / 2)
   let i = 0
   let j = s.length - 1
@@ -13,5 +15,3 @@ function isPalindrome(s) {
   }
   return true
 }
-
-console.log(isPalindrome('ASSSA kjhkjhk  jguythj  '))
