@@ -71,12 +71,12 @@ const leadersInArr = (arr) => {
   return leaderArr
 }
 
-const maxSubArraySum = (arr, n) => {
-    let sumEle = []
-    let sum = 0
-    for (let i = 0; i < arr.length; i++){
-        if (sum + arr[i] > sum && sumEle.length) {
-            sumEle.appen
-        }
-    }
-}
+// const maxSubArraySum = (arr, n) => {
+//     let sumEle = []
+//     let sum = 0
+//     for (let i = 0; i < arr.length; i++){
+//         if (sum + arr[i] > sum && sumEle.length) {
+//             sumEle.appen
+//         }
+//     }
+// }
