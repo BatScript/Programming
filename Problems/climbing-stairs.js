@@ -19,6 +19,7 @@ const count = (i, n) => {
   //    if person takes one step => count(i+1, n)
   //    If person takes two step => count(i+2, n)
   return count(i + 1, n) + count(i + 2, n)
+  // This is bottom up approach
 }
 
 const countV2 = (n) => {
@@ -30,6 +31,8 @@ const countV2 = (n) => {
   }
   // Will just decrement the total Stairs until it reaches 0 or 1.
   return countV2(n - 1) + countV2(n - 2)
+  // * This case looks like fibonacci's sequence to find nth number.
+  // Also it is the top down approach
 }
 
 const climbingStairs = (n) => {
