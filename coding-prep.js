@@ -148,8 +148,6 @@
 
 // console.log(productExceptSelf(nums))
 
-// * Valid Sudoku
-// Abhi k liye nhi kar rha
 
 // *Longest Consecutive Sequence
 // const nums = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1]
@@ -197,11 +195,6 @@
 
 // console.log(isPalindrome(s))
 
-/*
-8:54
-56:6
-
-*/
 
 // * Buy Two Chocolates
 
@@ -312,3 +305,181 @@
 // }
 
 // console.log(twoSum(nums, target))
+
+// * Maximum Score After Splitting a String
+
+// const s = '00000'
+
+// const getOccurences = (str, chr) => {
+//   let count = 0
+//   for (let ch of str) {
+//     if (ch === chr) {
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+// var maxScore = function (s) {
+//   let zeroes = 0
+//   let ones = getOccurences(s, '1')
+
+//   let score = 0
+
+//   for (let i = 0; i < s.length - 1; i++) {
+//     if (s[i] === '0') {
+//       zeroes += 1
+//     } else {
+//       ones -= 1
+//     }
+
+//     score = Math.max(score, zeroes + ones)
+//   }
+
+//   return score
+// }
+
+// console.log(maxScore(s))
+
+// * Path Crossing
+
+// const path = 'NES'
+// const path2 = 'NESWW'
+// const path3 = 'ESSWNN'
+
+// var isPathCrossing = function (path) {
+// ! Slow as fuck 5%
+// let co_ordinates = [0, 0]
+// let co_ordinate_arr = [[0, 0]]
+// for (let str of path) {
+//   if (str === 'N') {
+//     co_ordinates = [co_ordinates[0], co_ordinates[1] + 1]
+//     console.log(co_ordinates)
+//     co_ordinate_arr.push(co_ordinates)
+//   }
+//   if (str === 'E') {
+//     co_ordinates = [co_ordinates[0] + 1, co_ordinates[1]]
+//     console.log(co_ordinates)
+//     co_ordinate_arr.push(co_ordinates)
+//   }
+//   if (str === 'W') {
+//     co_ordinates = [co_ordinates[0] - 1, co_ordinates[1]]
+//     console.log(co_ordinates)
+//     co_ordinate_arr.push(co_ordinates)
+//   }
+//   if (str === 'S') {
+//     co_ordinates = [co_ordinates[0], co_ordinates[1] - 1]
+//     console.log(co_ordinates)
+//     co_ordinate_arr.push(co_ordinates)
+//   }
+// }
+
+// const stringified_arr = co_ordinate_arr.map(JSON.stringify)
+
+// const unique_stringified_arr = [...new Set(stringified_arr)]
+
+// console.log(stringified_arr, unique_stringified_arr)
+
+// return unique_stringified_arr.length !== co_ordinate_arr.length
+
+// * Slightly Faster 45%
+//   const hashMap = new Map()
+
+//   let co_ordinates = [0, 0]
+
+//   hashMap.set(JSON.stringify(co_ordinates), true)
+
+//   for (let str of path) {
+//     if (str === 'N') {
+//       co_ordinates = [co_ordinates[0], co_ordinates[1] + 1]
+//       if (hashMap.has(JSON.stringify(co_ordinates))) {
+//         return true
+//       } else {
+//         hashMap.set(JSON.stringify(co_ordinates), true)
+//       }
+//     }
+//     if (str === 'E') {
+//       co_ordinates = [co_ordinates[0] + 1, co_ordinates[1]]
+//       if (hashMap.has(JSON.stringify(co_ordinates))) {
+//         return true
+//       } else {
+//         hashMap.set(JSON.stringify(co_ordinates), true)
+//       }
+//     }
+//     if (str === 'W') {
+//       co_ordinates = [co_ordinates[0] - 1, co_ordinates[1]]
+//       if (hashMap.has(JSON.stringify(co_ordinates))) {
+//         return true
+//       } else {
+//         hashMap.set(JSON.stringify(co_ordinates), true)
+//       }
+//     }
+//     if (str === 'S') {
+//       co_ordinates = [co_ordinates[0], co_ordinates[1] - 1]
+//       if (hashMap.has(JSON.stringify(co_ordinates))) {
+//         return true
+//       } else {
+//         hashMap.set(JSON.stringify(co_ordinates), true)
+//       }
+//     }
+//   }
+
+//   return false
+// }
+
+// console.log(isPathCrossing(path2))
+
+// * Merge Strings Alternately
+
+// const word1 = 'abcd'
+// const word2 = 'pq'
+
+// var mergeAlternately = function (word1, word2) {
+// ! Slow as fuck
+// let newstr = ''
+// let w1 = 0
+// let w2 = 0
+// for (let i = 0; i < word1.length + word2.length; i++) {
+//   if (i % 2 === 0) {
+//     if (word1[w1]) {
+//       newstr += word1[w1]
+//       w1++
+//     } else {
+//       newstr += word2[w2]
+//       w2++
+//     }
+//   } else {
+//     if (word2[w2]) {
+//       newstr += word2[w2]
+//       w2++
+//     } else {
+//       newstr += word1[w1]
+//       w1++
+//     }
+//   }
+// }
+// * Faster
+// let newstr = ''
+// for (let i = 0; i < Math.max(word1.length, word2.length); i++) {
+//   if (i < word1.length) {
+//     newstr += word1[i]
+//   }
+//   if (i < word2.length) {
+//     newstr += word2[i]
+//   }
+// }
+// return newstr
+// }
+
+// console.log(mergeAlternately(word1, word2))
+
+// * Greatest Common Divisor of Strings
+
+const str1 = 'ABCABC'
+const str2 = 'ABC'
+
+const divideStrings = (dividend, divisor) => {}
+
+var gcdOfStrings = function (str1, str2) {}
+
+console.log(gcdOfStrings(str1, str2))
