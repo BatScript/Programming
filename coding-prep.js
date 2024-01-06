@@ -148,7 +148,6 @@
 
 // console.log(productExceptSelf(nums))
 
-
 // *Longest Consecutive Sequence
 // const nums = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1]
 // const longestConsecutive = (nums) => {
@@ -194,7 +193,6 @@
 // }
 
 // console.log(isPalindrome(s))
-
 
 // * Buy Two Chocolates
 
@@ -475,11 +473,174 @@
 
 // * Greatest Common Divisor of Strings
 
-const str1 = 'ABCABC'
-const str2 = 'ABC'
+// todo
 
-const divideStrings = (dividend, divisor) => {}
+// const str1 = 'ABCABC'
+// const str2 = 'ABC'
 
-var gcdOfStrings = function (str1, str2) {}
+// const divideStrings = (dividend, divisor) => {}
 
-console.log(gcdOfStrings(str1, str2))
+// var gcdOfStrings = function (str1, str2) {}
+
+// console.log(gcdOfStrings(str1, str2))
+
+// * Move Zeroes
+
+// const swap = (arr, i, j) => {
+//   let temp = arr[i]
+//   arr[i] = arr[j]
+//   arr[j] = temp
+// }
+
+// const arr = '01001110'
+
+// const moveZeroes = (arr) => {
+//   let arrOfZeroes = []
+//   let arrOfOnes = []
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === '0') {
+//       arrOfZeroes.push('0')
+//     } else {
+//       arrOfOnes.push('1')
+//     }
+//   }
+
+//   return [...arrOfOnes, ...arrOfZeroes].join('')
+// }
+
+// console.log(moveZeroes(arr))
+
+// * Minimum Changes To Make Alternating Binary String
+
+// const s = '1111'
+
+// var minOperations = function (s) {
+//   let count_a = 0
+//   let count_b = 0
+//   for (let i = 0; i < s.length; i++) {
+//     // when it starts with 1
+//     if (i % 2 === 0) {
+//       if (s[i] !== '1') {
+//         count_a += 1
+//       }
+//     } else {
+//       if (s[i] !== '0') {
+//         count_a += 1
+//       }
+//     }
+//   }
+
+//   for (let i = 0; i < s.length; i++) {
+//     // when it starts with 1
+//     if (i % 2 === 0) {
+//       if (s[i] !== '0') {
+//         count_b += 1
+//       }
+//     } else {
+//       if (s[i] !== '1') {
+//         count_b += 1
+//       }
+//     }
+//   }
+//   return Math.min(count_a, count_b)
+// }
+
+// console.log(minOperations(s))
+
+// * Check If Two String Arrays are Equivalent
+
+// const word1 = ['ab', 'c']
+// const word2 = ['a', 'bc']
+
+// var arrayStringsAreEqual = function (word1, word2) {
+//   return (
+//     word1.reduce((acc, curr) => acc + curr) ===
+//     word2.reduce((acc, curr) => acc + curr)
+//   )
+// }
+
+// console.log(arrayStringsAreEqual(word1, word2))
+
+// * Longest Palindromic Substring
+// todo
+// const s = 'babad'
+
+// const checkPalindrome = (s) => {
+//   for (let i = 0; i < s.length; i++){
+//     if (s[i] !== s[s.length - i - 1]) {
+//       return false
+//     }
+//   }
+//   return true
+// }
+
+// var longestPalindrome = function (s) {
+
+// }
+
+// console.log(longestPalindrome(s))
+
+// * Decode Ways
+// todo
+// const s1 = '12' //2
+// const s2 = '226' //3
+// const s3 = '06' //0
+// const s4 = '02204'
+
+// var numDecodings = function (s) {
+//   // for single digit
+//   let count = 1
+
+//   // for double digit
+//   let f = 0
+//   let l = 1
+//   for (let i = 0; i < s.length; i += 2) {
+//     if (s[f] !== '0') {
+//       count += 1
+//     }
+//     f++
+//     l++
+//   }
+
+//   if (s.length % 2 === 0) {
+//     count += 1
+//   }
+
+// for (let i = 0; i < s.length; i += 2) {
+//   if (s[i] !== '0') {
+//     count += 1
+//   }
+// }
+
+//   return count
+// }
+
+// console.log(numDecodings(s2))
+
+// * Container With Most Water
+// Self note: amt of water = shorter of two poles * distance
+// tags: two pointer.
+// const height = [2, 3, 4, 5, 18, 17, 6]
+
+// var maxArea = function (height) {
+//   let left = 0
+//   let right = height.length - 1
+//   let maxArea = 0
+//   while (left <= right) {
+//     let area = Math.min(height[right], height[left]) * (right - left)
+//     maxArea = Math.max(maxArea, area)
+
+//     if (height[left] >= height[right]) {
+//       right--
+//     } else {
+//       left++
+//     }
+//   }
+//   return { maxArea, left, right }
+// }
+
+// console.log(maxArea(height))
+
+// * keep this line at bottom always
+// todo: check for todos

@@ -244,3 +244,4 @@
 // * Let var const
 
 // * Temporal dead zone
+// Error zone between the declaration and initialisation, happens with let and const.
