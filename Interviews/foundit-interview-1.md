@@ -1,3 +1,9 @@
+# Coding Round - Cleared
+
+## Intro
+1. Why NextJS
+2. getStaticprops
+
 ## React
 Build a collapsable file system UI using React just like you see in vscode file options,
 like this : 

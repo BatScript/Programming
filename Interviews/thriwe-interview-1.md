@@ -1,3 +1,10 @@
+# Coding Round - Not Cleared
+
+## Intro
+1. Why Nextjs 
+
+## Coding
+
 ```
 ;(function () {
     console.log(1)
