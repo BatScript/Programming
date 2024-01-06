@@ -7,12 +7,12 @@
 ## React
 Build a collapsable file system UI using React just like you see in vscode file options,
 like this : 
-Folder 1
-    Sub-folder1
-        file1.js
-    Sub-folder-2
-        file2.js
-Folder2
+1. Folder 1
+    1. Sub-folder1
+        1. file1.js
+    2. Sub-folder-2
+        1. file2.js
+2. Folder2
 
 ## Coding
  Move Zeroes
